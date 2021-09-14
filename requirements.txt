@@ -1,0 +1,7 @@
+ccxt
+tkinter
+beeply
+winsound
+pandas
+python-binance
+mplfinance
