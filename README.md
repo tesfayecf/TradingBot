@@ -7,7 +7,7 @@ Graphic User Interface
 
 Select the strategy parameters with the buttons above.
 
-Press the "Run Bot" button to strat the algorithm.
+Press the "Run Bot" button to start the algorithm.
 
 Live data will be displayed at the center of the window. 
 
@@ -20,19 +20,19 @@ New strategies can be developed to be used with this interface.
 The main strategy is based on the supertrend indicator.
 
 To build a new strategy create the following functions:
-- get_(name): this function formats the data recievied from the api and calculets the necessary indicators the be checked.
-- check_buy_sell_signals: check the necessary custom conditions that need to be fullfilled to trigger the algorithm.
-- plot_(name): function to be called when the "plot" button is pressed. Set what has to be plotted and in which colors.
-- run_(name): gathers and organizes all the functions above is is called by the "Run Bot" button.
+- get_(name): this function formats the data received from the API and calculates the necessary indicators the be checked.
+- check_buy_sell_signals: check the necessary custom conditions that need to be fulfilled to trigger the algorithm.
+- plot_(name): function to be invocked when the "plot" button is clicked. Set what and in which colors has to be plotted.
+- run_(name): gathers and organizes all the functions above. It's called by the "Run Bot" button.
 
-To create a new strategy import the new file and change change the function names in the App.py file.
+To create a new strategy import the new file and modify the function names into the App.py file.
 
 To set up run:
 ```
 pip install -r requirements
 ```
 
-and change the config.py file:
+and change the config.py file parameters:
  ```
  BINANCE_API_KEY = ''
 BINANCE_SECRET_KEY = ''
