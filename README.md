@@ -30,7 +30,7 @@ When a new order is triggered, the PNL of the position is displayed above the ma
 New strategies can be developed to be used with this interface. The main strategy is based on the supertrend indicator.
 
 To build a new strategy create the following functions:
-- get_(name): this function formats the data received from the API and calculates the necessary indicators the be checked.
+- get_(name): this function formats the data received from the API and calculates the necessary indicators to be checked.
 - check_buy_sell_signals: check the necessary custom conditions that need to be fulfilled to trigger the algorithm.
 - plot_(name): function to be invocked when the "plot" button is clicked. Set what and in which colors has to be plotted.
 - run_(name): gathers and organizes all the functions above. It's called by the "Run Bot" button.
